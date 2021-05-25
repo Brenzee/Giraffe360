@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { AiFillStar, AiOutlineCheck } from "react-icons/ai";
 import { MdInsertPhoto, MdPhotoCamera } from "react-icons/md";
 import { HiDocumentDuplicate } from "react-icons/hi";
-import { FiCheck } from "react-icons/fi";
 
 const Wrapper = styled.div`
   background: ${(props) => props.theme.giraffeGrayBG};

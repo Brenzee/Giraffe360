@@ -6,8 +6,8 @@ import styled from "styled-components";
 import Header from "./components/Header";
 
 // Pages
-import Home from "./pages/home";
-import Branding from "./pages/branding";
+import Home from "./pages/Home";
+import Branding from "./pages/Branding";
 
 const Wrapper = styled.div`
   min-height: 100vh;
