@@ -7,6 +7,8 @@ This project was developed with:
 - `React-router-dom`
 - `styled-components`
 - `Redux`
+- `React-icons`
+- `React-helmet`
 
 
 ## How to run project locally
