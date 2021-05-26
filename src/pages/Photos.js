@@ -9,6 +9,7 @@ import RadioButton from "../components/RadioButton";
 import { InputWrapper } from "../components/Shared";
 import Stepper from "../components/Stepper";
 import ToggleSwitch from "../components/ToggleSwitch";
+import Meta from "../components/Meta";
 
 const Photos = () => {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const Photos = () => {
 
   return (
     <div>
+      <Meta title="Photos" />
       <Stepper step1 active="step2" title="Set your photo preferences" />
       <InputWrapper>
         <div className="input_container">

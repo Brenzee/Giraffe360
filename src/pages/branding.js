@@ -9,13 +9,10 @@ import ToggleSwitch from "../components/ToggleSwitch";
 import RadioButton from "../components/RadioButton";
 import Button from "../components/Button";
 import { handleInputChange } from "../actions";
+import Meta from "../components/Meta";
 
 const Branding = () => {
   const dispatch = useDispatch();
-  // const [inputData, setInputData] = useState({
-  //   logo: false,
-  //   position: null,
-  // });
 
   const inputData = useSelector((state) => state.inputData);
   const { logo } = inputData;
@@ -33,6 +30,7 @@ const Branding = () => {
 
   return (
     <div>
+      <Meta title="Branding" />
       <Stepper active="step1" title="Set your branding preferences" />
       <InputWrapper>
         <div className="input_container">

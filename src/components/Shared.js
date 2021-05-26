@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { breakPoints } from "../theme";
 
 export const InputWrapper = styled.div`
-  max-width: 350px;
+  max-width: 360px;
   margin: 4rem auto 0;
   padding: 0 1rem;
   .input_container {
@@ -14,7 +14,7 @@ export const InputWrapper = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      min-width: 115px;
+      min-width: 125px;
     }
   }
   .input_button_container {

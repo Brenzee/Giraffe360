@@ -8,13 +8,10 @@ import Button from "../components/Button";
 import { InputWrapper } from "../components/Shared";
 import Stepper from "../components/Stepper";
 import ToggleSwitch from "../components/ToggleSwitch";
+import Meta from "../components/Meta";
 
 const Tour = () => {
   const dispatch = useDispatch();
-  // const [inputData, setInputData] = useState({
-  //   welcome: false,
-  //   welcomeLogo: false,
-  // });
 
   const inputData = useSelector((state) => state.inputData);
   const { welcome, welcomeLogo } = inputData;
@@ -30,11 +27,11 @@ const Tour = () => {
     if (welcome) {
       dispatch(handleInputChange("welcomeLogo", !welcomeLogo));
     }
-    // setInputData({ ...inputData, welcomeLogo: inputData.welcome ? !inputData.welcomeLogo : false });
   };
 
   return (
     <div>
+      <Meta title="Tour" />
       <Stepper step1 step2 step3 active="step4" title="Set your photo preferences" />
       <InputWrapper>
         <div className="input_container">

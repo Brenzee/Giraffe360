@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Meta from "../components/Meta";
 import { breakPoints } from "../theme";
 
 const Wrapper = styled.div`
@@ -57,6 +58,7 @@ const Wrapper = styled.div`
 const Home = () => {
   return (
     <Wrapper>
+      <Meta title="Welcome" />
       <h1 className="home_title">
         Welcome to your <span>Giraffe360</span> account.
       </h1>

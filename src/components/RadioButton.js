@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { breakPoints } from "../theme";
 
 const RadioButtonWrapper = styled.div`
   display: flex;
@@ -9,7 +8,7 @@ const RadioButtonWrapper = styled.div`
   color: ${(props) => (props.disabled ? props.theme.giraffeGray : props.theme.giraffeBlue)};
   margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 12px;
   min-width: 76px;
   .radiobutton_box {
     height: 26px;
@@ -51,9 +50,6 @@ const RadioButtonWrapper = styled.div`
 
   :last-of-type {
     margin-bottom: 0;
-  }
-  @media (max-width: ${breakPoints.md}px) {
-    font-size: 12px;
   }
 `;
 

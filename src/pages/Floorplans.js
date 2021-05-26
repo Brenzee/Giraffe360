@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { handleInputChange } from "../actions";
 
 // Components
 import Button from "../components/Button";
@@ -8,7 +9,7 @@ import RadioButton from "../components/RadioButton";
 import { InputWrapper } from "../components/Shared";
 import Stepper from "../components/Stepper";
 import ToggleSwitch from "../components/ToggleSwitch";
-import { handleInputChange } from "../actions";
+import Meta from "../components/Meta";
 
 const Floorplans = () => {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const Floorplans = () => {
 
   return (
     <div>
+      <Meta title="Floorplans" />
       <Stepper step1 step2 active="step3" title="Set your floorplan preferences" />
       <InputWrapper>
         <div className="input_container">
