@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // Assets
@@ -10,7 +11,7 @@ const Wrapper = styled.header`
   min-height: 80px;
   display: flex;
   align-items: center;
-  img {
+  a {
     display: block;
     margin: auto;
   }
@@ -19,7 +20,9 @@ const Wrapper = styled.header`
 const Header = () => {
   return (
     <Wrapper>
-      <img src={Giraffe360} alt="Giraffe360 logo"></img>
+      <Link to="/">
+        <img src={Giraffe360} alt="Giraffe360 logo"></img>
+      </Link>
     </Wrapper>
   );
 };

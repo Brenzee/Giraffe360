@@ -39,7 +39,7 @@ const Wrapper = styled.div`
       background: #ecb900;
     }
   }
-  @media (max-width: ${breakPoints.md}px) {
+  @media (max-width: ${breakPoints.sm}px) {
     min-height: 60vh;
     .home_title {
       font-size: 28px;

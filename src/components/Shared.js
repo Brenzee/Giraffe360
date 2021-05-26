@@ -28,6 +28,9 @@ export const InputWrapper = styled.div`
     a:last-of-type {
       margin-left: auto;
     }
+    @media (max-width: ${breakPoints.sm}px) {
+      margin-top: 2rem;
+    }
   }
   @media (max-width: ${breakPoints.md}px) {
     margin-top: 1rem;
