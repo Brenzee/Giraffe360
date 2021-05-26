@@ -55,7 +55,7 @@ const Tour = () => {
           <Link to="/floorplans">
             <Button>Back</Button>
           </Link>
-          <Link to="/success" onClick={() => console.log(inputData)}>
+          <Link to="/success">
             <Button primary>Submit</Button>
           </Link>
         </div>
