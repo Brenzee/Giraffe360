@@ -5,3 +5,9 @@ export const theme = {
   giraffeGrayBG: `#F3F3F3`,
   success: `#1FC375`,
 };
+
+export const breakPoints = {
+  sm: 576,
+  md: 768,
+  lg: 992,
+};

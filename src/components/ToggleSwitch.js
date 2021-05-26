@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { breakPoints } from "../theme";
 
 const Wrapper = styled.div`
   display: flex;
@@ -46,6 +47,12 @@ const Wrapper = styled.div`
           border-left: 5px solid transparent;
           border-right: 5px solid transparent;
           border-top: 5px solid ${(props) => props.theme.giraffeBlue};
+        }
+        @media (max-width: ${breakPoints.md}px) {
+          left: -177px;
+          ::after {
+            left: 90%;
+          }
         }
       }
     }

@@ -14,7 +14,7 @@ import Tour from "./pages/Tour";
 import Success from "./pages/Success";
 
 const Wrapper = styled.div`
-  min-height: 100vh;
+  min-height: 90vh;
   color: ${(props) => props.theme.giraffeBlue};
 `;
 

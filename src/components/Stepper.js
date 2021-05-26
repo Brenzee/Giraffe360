@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { AiFillStar, AiOutlineCheck } from "react-icons/ai";
 import { MdInsertPhoto, MdPhotoCamera } from "react-icons/md";
 import { HiDocumentDuplicate } from "react-icons/hi";
+import { breakPoints } from "../theme";
 
 const Wrapper = styled.div`
   background: ${(props) => props.theme.giraffeGrayBG};
@@ -28,11 +29,14 @@ const Wrapper = styled.div`
       font-size: 30px;
       font-weight: 700;
       line-height: 60px;
-      @media (max-width: 768px) {
+      @media (max-width: ${breakPoints.md}px) {
         font-size: 20px;
         line-height: normal;
       }
     }
+  }
+  @media (max-width: ${breakPoints.md}px) {
+    min-height: 150px;
   }
 `;
 
@@ -91,6 +95,11 @@ const StepWrapper = styled.div`
     }
     .stepper_step_title {
       text-align: center;
+    }
+  }
+  @media (max-width: ${breakPoints.md}px) {
+    .stepper_step_title {
+      display: none;
     }
   }
 `;

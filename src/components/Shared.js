@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { breakPoints } from "../theme";
 
 export const InputWrapper = styled.div`
   max-width: 350px;
   margin: 4rem auto 0;
+  padding: 0 1rem;
   .input_container {
     display: flex;
     justify-content: space-between;
@@ -26,5 +28,15 @@ export const InputWrapper = styled.div`
     a:last-of-type {
       margin-left: auto;
     }
+  }
+  @media (max-width: ${breakPoints.md}px) {
+    margin-top: 1rem;
+    .input_container h3 {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: ${breakPoints.sm}px) {
+    width: 100%;
+    max-width: none;
   }
 `;

@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { breakPoints } from "../theme";
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   text-align: center;
+  padding: 0 1rem;
   .home_title {
     font-size: 50px;
     font-weight: 700;
@@ -32,8 +34,22 @@ const Wrapper = styled.div`
     border-radius: 6px;
     font-weight: 700;
     transition: all 0.2s;
+    font-size: 16px;
     :hover {
       background: #ecb900;
+    }
+  }
+  @media (max-width: ${breakPoints.md}px) {
+    min-height: 60vh;
+    .home_title {
+      font-size: 28px;
+      line-height: normal;
+      margin-bottom: 2rem;
+    }
+    .home_description {
+      .home_subtitle {
+        font-size: 16px;
+      }
     }
   }
 `;

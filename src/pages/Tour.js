@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { handleInputChange } from "../actions";
 
 // Components
 import Button from "../components/Button";
-import RadioButton from "../components/RadioButton";
 import { InputWrapper } from "../components/Shared";
 import Stepper from "../components/Stepper";
 import ToggleSwitch from "../components/ToggleSwitch";
-import { handleInputChange } from "../actions";
 
 const Tour = () => {
   const dispatch = useDispatch();
