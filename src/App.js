@@ -8,6 +8,10 @@ import Header from "./components/Header";
 // Pages
 import Home from "./pages/Home";
 import Branding from "./pages/Branding";
+import Photos from "./pages/Photos";
+import Floorplans from "./pages/Floorplans";
+import Tour from "./pages/Tour";
+import Success from "./pages/Success";
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -21,9 +25,10 @@ function App() {
         <Header />
         <Route exact path="/" component={Home} />
         <Route path="/branding" component={Branding} />
-        <Route path="/photos" component={Home} />
-        <Route path="/floorplans" component={Home} />
-        <Route path="/tour" component={Home} />
+        <Route path="/photos" component={Photos} />
+        <Route path="/floorplans" component={Floorplans} />
+        <Route path="/tour" component={Tour} />
+        <Route path="/success" component={Success} />
       </BrowserRouter>
     </Wrapper>
   );

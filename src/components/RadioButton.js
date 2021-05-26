@@ -5,9 +5,11 @@ const RadioButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: ${(props) => (props.disabled ? "normal" : "pointer")};
+  color: ${(props) => (props.disabled ? props.theme.giraffeGray : props.theme.giraffeBlue)};
   margin-bottom: 1rem;
   font-weight: 700;
   font-size: 10px;
+  min-width: 76px;
   .radiobutton_box {
     height: 26px;
     width: 26px;
@@ -31,8 +33,19 @@ const RadioButtonWrapper = styled.div`
       width: 14px;
       background: white;
       border-radius: 12px;
-      opacity: ${(props) => (props.checked ? "1" : "0.1")};
+      opacity: ${(props) => (props.checked ? "1" : "0")};
     }
+  }
+
+  :hover {
+    ${(props) =>
+      !props.disabled &&
+      !props.checked &&
+      `.radiobutton_check {
+      top: 3px;
+      background: ${props.theme.giraffeYellow};
+      opacity: 0.3;
+    }`}
   }
 
   :last-of-type {

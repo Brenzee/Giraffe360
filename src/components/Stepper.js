@@ -15,16 +15,23 @@ const Wrapper = styled.div`
   flex-direction: column;
   min-height: 230px;
   .stepper_container {
-    max-width: 700px;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 600px;
     .stepper {
       display: flex;
       justify-content: center;
       margin-bottom: 1rem;
     }
     .stepper_title {
+      text-align: center;
       font-size: 30px;
       font-weight: 700;
       line-height: 60px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: normal;
+      }
     }
   }
 `;
